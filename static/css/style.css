@@ -1,0 +1,133 @@
+#container{
+  position:relative;
+  width:1200px;
+  height:700px;
+  margin:20px;
+  border:1px solid lightgrey;
+  border-radius: 5px;
+  padding:0px;
+}
+.plot{
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+.axis path{
+    stroke:none;
+}
+.axis line {
+    stroke: none;
+    /*stroke: #000;*/
+    /*shape-rendering: crispEdges;*/
+}
+#plot-canvas {
+    z-index: 2;
+}
+#axis-svg {
+    z-index: 1;
+}
+.tick line{
+    opacity: 0.2;
+}
+.tick text {
+    font: 10px sans-serif;
+    fill:lightslategrey;
+}
+#search-div{
+  position:relative;
+  margin:auto;
+  height:50px;
+}
+#search-button{
+  margin: 0px;
+  display: inline-block;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
+  color: #FFFFFF;
+  padding: 6px 20px 6px;
+  border-radius: 2px;
+  background: #8bc34a;
+  position: absolute;
+  left: 650px;
+  top: 12px;
+  font-size:18px;
+  font-weight:600;
+}
+#search-input{
+  position:absolute;
+  top:12px;
+  left:430px;
+  width:200px;
+  height:30px;
+  font-size:22px;
+  font-weight:600;
+  border-radius:5px;
+}
+#im-feeling-lucky{
+  margin: 0px;
+  display: inline-block;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.25);
+  color: #FFFFFF;
+  padding: 6px 20px 6px;
+  border-radius: 2px;
+  background: indianred;
+  position: absolute;
+  left: 750px;
+  top: 12px;
+  font-size:18px;
+  font-weight:600;
+}
+#slider-vertical{
+  position:absolute;
+  top:0px;
+  right:-30px;
+}
+#slider-label{
+  position:absolute;
+  top:215px;
+  right:-32px;
+}
+#sparsity-line{
+  position:absolute;
+  background-color:rgba(100,100,100,0.3);
+  height:1px;
+  width:35px;
+  top:154px;
+  right:-50px;
+  z-index:3;
+}
+.ui-slider-handle{
+  z-index:4 !important;
+}
+
+#sparsity-label{
+  position:absolute;
+  font-family:Open Sans;
+  font-size:12px;
+  width:140px;
+  top:130px;
+  right:-194px;
+}
+#color-legend{
+  position:absolute;
+  top:280px;
+  right:-32px;
+  width:20px;
+  height:200px;
+  background:linear-gradient(rgba(240,80,10,0.8), rgba(40,40,180,0.4));
+  border:1px solid black;
+}
+
+#top-color-label{
+  position:absolute;
+  top:265px;
+  right:-55px;
+  font-family:Open Sans;
+  font-size:12px;
+}
+#bottom-color-label{
+  position:absolute;
+  top:450px;
+  right:-45px;
+  font-family:Open Sans;
+  font-size:12px;
+}
